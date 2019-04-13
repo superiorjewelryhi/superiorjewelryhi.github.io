@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Earrings</title>
+</head>
+<!add java>
+<head>
+<STYLE>
+.spanstyle {
+    position:absolute;
+    visibility:visible;
+    top:-50px;
+    font-size:12pt;
+    font-family:Arial;
+font-weight:bold;
+    color:blue;
+}
+</STYLE>
+
+<script>
+
+
+
+var x,y
+var step=20
+var flag=0
+
+var message="Superior Jewelry "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    ypos[i]=-50
+}
+
+function handlerMM(e){
+    x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+    y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+    flag=1
+}
+
+function makesnake() {
+    if (flag==1 && document.all) {
+    for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]
+    }
+        xpos[0]=x+step
+        ypos[0]=y
+    
+        for (i=0; i<message.length-1; i++) {
+        var thisspan = eval("span"+(i)+".style")
+        thisspan.posLeft=xpos[i]
+            thisspan.posTop=ypos[i]
+    }
+    }
+    
+    else if (flag==1 && document.layers) {
+    for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]
+    }
+        xpos[0]=x+step
+        ypos[0]=y
+    
+        for (i=0; i<message.length-1; i++) {
+        var thisspan = eval("document.span"+i)
+        thisspan.left=xpos[i]
+            thisspan.top=ypos[i]
+    }
+    }
+        var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+</head>
+<body onLoad="makesnake()" style="width:100%;overflow-x:hidden;overflow-y:scroll">
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+document.write("<span id='span"+i+"' class='spanstyle'>")
+    document.write(message[i])
+document.write("</span>")
+}
+
+if (document.layers){
+    document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+<BODY background=sj/11.jpg>
+<CENTER>
+
+<P align=center><IMG height=100 
+      src="sj/lr.gif" width=600 
+      border=0>
+
+<p>
+<font color="#FF00FF" size="5" face="Times New Roman, Times, serif"><B><I><U>14k Yellow Gold Earrings</font></B></I></U>
+<BR><BR>
+</P>
+
+<!add new earrings here>
+
+<table border="0" cellpadding="0" cellspacing="1">
+
+	<tr>
+	
+	<td valign="center" align="center" width="16%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/921_575.jpg"><IMG SRC="sj/921_575.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Tri-color Plumeria<br>3/4" Long &nbsp; 2.2g<br>Q469<br><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/921_576.jpg"><IMG SRC="sj/921_576.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Plumeria<br>3/4" Long &nbsp; 2.3g<br>Q467<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/921_577.jpg"><IMG SRC="sj/921_577.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Three Flowers<br>1" Long &nbsp; 4.1g<br>Q464<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/921_578.jpg"><IMG SRC="sj/921_578.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+6mm Maile BB<br>1.8g<br>Q499<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/921_583.jpg"><IMG SRC="sj/921_583.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Three Plumera<br>3/4" Long &nbsp; 2.1g<br>Q501<br></A></font><br></td></tr></table>
+
+		</td>
+	</tr>
+
+<tr>
+	
+	<td valign="center" align="center" width="16%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/454.jpg"><IMG SRC="sj/454.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+8mm Plumeria w/BB<br>W:5/16" &nbsp; H:3/4"<br>6.0g<br>ER12<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/457.jpg"><IMG SRC="sj/457.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+9mm Plumeria<br>W:5/16" &nbsp;1.1g<br><br>ER01<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/458.jpg"><IMG SRC="sj/458.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+12mm Plumeria<br>W:1/2" &nbsp; 2.6g<br><br>ER03<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/460.jpg"><IMG SRC="sj/460.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+11mm Plumeria w/BB<br>W:7/16"&nbsp;H:3/4"<br>6.0g<br>ER12<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/462.jpg"><IMG SRC="sj/462.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+22mm with Clip<br>W:7/8" 10.3g<br><br>ER04<br></A></font><br></td></tr></table>
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/463.jpg"><IMG SRC="sj/463.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+7mm Plumeria cut out<br>W:1/4" H:3/4"<br>5.4g<br>ER13<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/465.jpg"><IMG SRC="sj/465.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+17mm Dangle Plumeria<br>W:3/4" H:1 1/4"<br>5.9g<br>ER07<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/466.jpg"><IMG SRC="sj/466.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+12mm Dangle Plumeria<br>W:1/2" H:1 1/8"<br>3.9g<br>ER06<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/468.jpg"><IMG SRC="sj/468.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+10mm Dangle Plumeria<br>W:3/8" H:7/8"<br>2.9g<br>ER05<br></A><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/469.jpg"><IMG SRC="sj/469.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+15mm with C-Z<br>W:5/8" H:1 1/4"<br>3.8g<br>ER08<br></A></font><br></td></tr></table>
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/470.jpg"><IMG SRC="sj/470.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Plumeria initial<br>W:5/16" H:7/8"<br>2.2g<br>ER11<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/472.jpg"><IMG SRC="sj/472.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Heart initial stud<br>W:3/8" 1.6g<br><br>ER10<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/474.jpg"><IMG SRC="sj/474.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Heart initial stud<br>W:5/16" 1.1g<br><br>ER09<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/1.jpg"><IMG SRC="sj/1.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+8mm with BB<br>W:5/16" H:3/4"<br>3.5g<br>ER14<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/480.jpg"><IMG SRC="sj/480.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+10mm with BB<br>W:3/8" H:3/4"<br>5.0g<br>ER15<br></A></font><br></td></tr></table>
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/2.jpg"><IMG SRC="sj/2.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+12mm with BB<br>W:7/16" H:3/4"<br>7.6g<br>ER16<br></A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/3.jpg"><IMG SRC="sj/3.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+10mm Plain<br>W:3/8" H:3/4"<br>7.7g<br>ER16<br>
+</A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/483.jpg"><IMG SRC="sj/483.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+10mm Round Green Jade with Diamond<br>2.7g<br>ER18<br>
+</A></font><br></td></tr></table></strong>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/925_591.jpg"><IMG SRC="sj/925_591.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+dangle earring<br>3.3g.<br>1" long<br>T692<br>
+</A></font><br></td></tr></table></strong>
+		
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/10_01.jpg"><IMG SRC="sj/10_01.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+New Enameled Sandals<br>in 14 karat gold<br>1.9g.<br>5/8" long<br>Q561
+</A></font><br></td></tr></table></strong>
+		</td>
+
+<!ADD HERE>
+<tr>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/1009_003.jpg"><IMG SRC="sj/1009_003.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Turtle earring<br>W:1/4" H:1"<br>2.3g<br>J971<br>
+</A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/1009_005.jpg"><IMG SRC="sj/1009_005.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Turtle dangle earring<br>W:1/2" H:1 1/4"<br>2.3g<br>J714<br>
+</A></font><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/1009_006.jpg"><IMG SRC="sj/1009_006.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Turtle earring<br>W:1/2" H:5/8"<br>1.7g<br>T766<br>
+</A></font><br></td></tr></table></strong>
+
+		</td>
+		<td valign="center" align="center" width="20%"><table align="center" border="0" cellspacing="2"><tr><td height="122" valign="center" align="center"><A HREF="sj/1009_007.jpg"><IMG SRC="sj/1009_007.jpg" border="0" width="150" height="116"></td>
+</tr><tr><td valign="center" align="center">
+Turtle earring<br>W:1/2" H:5/8"<br>2.1g.<br>J975<br>
+</A></font><br></td></tr></table></strong>
+		
+		<td valign="center" align="center" width="20%">
+
+		</td>
+	</tr>
+</table>
+
+</CENTER> 
+
+
+
+<P><A HREF="earrings/earrings.html"><H3>Click here for more earrings</H3></P>
+
+
+
+
+
+</html>
+

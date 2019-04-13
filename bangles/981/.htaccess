@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+RewriteEngine on
+
+RewriteRule ^(.*)\.html$ index.php?name=$1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Bracelets</title>
+</head>
+<!add java>
+<head>
+<STYLE>
+.spanstyle {
+    position:absolute;
+    visibility:visible;
+    top:-50px;
+    font-size:12pt;
+    font-family:Arial;
+font-weight:bold;
+    color:blue;
+}
+</STYLE>
+
+<script>
+
+
+
+var x,y
+var step=20
+var flag=0
+
+var message="Superior Jewelry "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    ypos[i]=-50
+}
+
+function handlerMM(e){
+    x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+    y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+    flag=1
+}
+
+function makesnake() {
+    if (flag==1 && document.all) {
+    for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]
+    }
+        xpos[0]=x+step
+        ypos[0]=y
+    
+        for (i=0; i<message.length-1; i++) {
+        var thisspan = eval("span"+(i)+".style")
+        thisspan.posLeft=xpos[i]
+            thisspan.posTop=ypos[i]
+    }
+    }
+    
+    else if (flag==1 && document.layers) {
+    for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]
+    }
+        xpos[0]=x+step
+        ypos[0]=y
+    
+        for (i=0; i<message.length-1; i++) {
+        var thisspan = eval("document.span"+i)
+        thisspan.left=xpos[i]
+            thisspan.top=ypos[i]
+    }
+    }
+        var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+</head>
+<body onLoad="makesnake()" style="width:100%;overflow-x:hidden;overflow-y:scroll">
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+document.write("<span id='span"+i+"' class='spanstyle'>")
+    document.write(message[i])
+document.write("</span>")
+}
+
+if (document.layers){
+    document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+<BODY background=sj/11.jpg>
+<CENTER>
+
+<P align=center><IMG height=100 
+      src="sj/123a.gif" width=600 
+      border=0>
+<p>
+<font color="#FF00FF" size="5" face="Times New Roman, Times, serif"><B><I><U>14k Yellow Gold Bracelets</font></B></I></U>
+<BR><BR>
+</P>
+<table border="0" cellpadding="0" cellspacing="1">
+	<tr>
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/374.jpg"><IMG SRC="sj/374.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+8mm Maile cut out<BR></A><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/jvn06.jpg"><IMG SRC="sj/jvn06.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+12mm cut out b-1 design<BR></A><br></td></tr></table>
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/jvn13.jpg"><IMG SRC="sj/jvn13.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+15mm flat bamboo with long life edge<BR></A><br></td></tr></table>
+
+		</td>
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/jvn15.jpg"><IMG SRC="sj/jvn15.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+8mm with 3 characters</A><br></td></tr></table>
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/jvn22.jpg">
+<IMG SRC="sj/jvn22.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+8mm cut out plumeria design<BR>1.7mm thickness<BR>Q360<BR><BR>
+</A><br></td></tr></table>
+
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/b547.jpg">
+<IMG SRC="sj/b547.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+15mm flat with Chinese character<BR>Bamboo design longlife edge<BR>1.2mm thickness<BR>Q427<BR></A><br></td></tr></table>
+		</td>
+
+
+<tr>
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/921_567.jpg">
+<IMG SRC="sj/921_567.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+Barrel Raised Maile design<BR>1.7mm thickness<BR>V561<BR></A><br></td></tr></table>
+
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/921_14.jpg">
+<IMG SRC="sj/921_14.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+Barrel Raised Tiger design<BR>1.7mm thickness<BR>
+</A><br></td></tr></table>
+		</td>
+</head>
+<!2nd row new one_ take out 4/18/2004>
+	
+
+<!add new one>
+<tr>
+<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/924_581.jpg">
+<IMG SRC="sj/924_581.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+12mm flat Bamboo design<BR>with 3 Chinese characters<BR>good luck, high status wealth, longevity<BR>1.2mm thickness<BR></A><br></td></tr></table>
+
+		<td valign="center" align="center" width="50%"><table align="center" border="0" cellspacing="2"><tr><td height="160" valign="center" align="center"><A HREF="sj/924_584.jpg">
+<IMG SRC="sj/924_584.jpg" border="0" width="209" height="142"></td>
+</tr><tr><td valign="center" align="center">
+Barrel with Dolphin & Turtle design<BR><BR><BR>1.5mm thickness<BR></A><br></td></tr></table>
+
+</td>
+		</tr>	
+
+
+</table>
+<p align="center"><img src="sj/bar2.gif" width="600" height="10"></p>
+<P><A href="size.htm"><strong>Click here how to find your bracelet size</strong></A> 
+
+
+
+
+<P><A href="design.html"><strong>Click here to see bracelet design</strong></A> 
+
+
+
+</html>
+
+
+
+

@@ -1,0 +1,209 @@
+
+
+<center>
+<BODY background="sj/11.jpg">
+
+<APPLET CODE=RainbowColorText.class WIDTH=400 HEIGHT=50>
+<param name="TextToDisplay" value="Special of the Month">
+<param name="Link" value="gele@egnatia.ee.auth.gr">
+<param name="Target" value="_blank">
+<param name="FontSize" value="36">
+<param name="FontName" value="Arial">
+<param name="bgCOLOR" value="0,0,0">
+<param name="Author" value="George Eleftheriou">
+<param name="Email" value="gele@egnatia.ee.auth.gr">
+Your browser doesn't support java or java is not enabled!
+</APPLET> 
+</center>
+
+<html>
+<head>
+
+
+<script language="JavaScript">
+<!--
+
+var x,y//BY 13 YEAR OLD, SCOTT KLARR JR
+var step=20
+var flag=0
+
+var message="Superior Jewelry "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : event.clientX
+	y = (document.layers) ? e.pageY : event.clientY
+	flag=1
+}
+
+function textfollow() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.all.span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("textfollow()",10)
+}
+
+//-->
+</script>
+
+<STYLE>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:12pt;
+	font-family:verdana;
+	color:FF00FF
+}
+a { color:FFFFCC; text-decoration:none }
+a:hover { color:FF0000; text-decoration:underline }
+a:visited { color:FF0000 }
+</STYLE>
+
+</HEAD>
+<body bgcolor="#ffffff" onLoad="textfollow()">
+
+<script language="JavaScript">
+<!--
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+//-->
+</script>
+
+
+
+<center>
+<br><br>
+
+<TABLE cellSpacing=0 cellPadding=5 width=750 border=0>
+  <TBODY>
+  <TR>
+   <TD width=100>
+      <DIV align=right><A href="sj/1005_601.jpg"><IMG height=70 
+      src="sj/1005_601.jpg" 
+      width=120 border=0></DIV></TD>
+<TD vAlign=top width=249>12mm sterling silver bracelet<br> with name size up to 8 1/2"<br>many designs to choose<br>
+      <FONT color=#cc0000 size="5">Special ---- $99<BR></FONT></TD>
+
+    <TD width=110>
+      <DIV align=right><A href="sj/1005_02.jpg"><IMG height=70 
+      src="sj/1005_02.jpg" 
+      width=120 border=0></DIV></TD>
+    <TD vAlign=top width=251>
+      <DIV align=left>Lavendar Jade Bangle<br>from<br><br>
+      <FONT color=#cc0000 size="5">Special ---- $269<BR></FONT></TD>
+</DIV></TD></TR>
+    
+<!second row>
+
+<TABLE cellSpacing=0 cellPadding=5 width=750 border=0>
+  <TBODY>
+  <TR>
+<TD width=100>
+      <DIV align=right><A href="sj/1005_46.jpg"><IMG height=70 
+      src="sj/1005_46.jpg" 
+      width=120 border=0></DIV></TD>
+<TD vAlign=top width=249>14kt Hawaiian <b><u>4 for 1</b></u>&nbsp;Sale<br>[bracelet, pendant, ring and chain]<br>
+      <FONT color=#cc0000 size="3">6mm --- $359&nbsp;&nbsp;10mm --- $599<BR>8mm --- $479&nbsp;&nbsp;12mm --- $719</FONT></TD>
+
+    <TD width=110>
+      <DIV align=right><A href="sj/1005_48.jpg"><IMG height=70 
+      src="sj/1005_48.jpg" 
+      width=120 border=0></DIV></TD>
+    <TD vAlign=top width=251>
+      <DIV align=left>14k yellow gold five flowers<br> necklace with chain<br><br>
+      <FONT color=#cc0000 size="5">Special ---- $119<BR></FONT></TD>
+</DIV></TD></TR>
+ <!3rd row>
+<p align="center"><img src="sj/bar2.gif" width="650" height="10"></p>
+<TABLE cellSpacing=0 cellPadding=5 width=750 border=0>
+  <TBODY>
+  <TR>
+<TD width=100>
+      <DIV align=right><A href="sj/10_01.jpg"><IMG height=70 
+      src="sj/10_01.jpg" 
+      width=120 border=0></DIV></TD>
+<TD vAlign=top width=249>Enameled sandals earring <br>in 14k gold<br><br>
+      <FONT color=#cc0000 size="5">Special ---- $39<BR></FONT></TD>
+
+    <TD width=110>
+      <DIV align=right><A href="sj/457.jpg"><IMG height=70 
+      src="sj/457.jpg" 
+      width=120 border=0></DIV></TD>
+    <TD vAlign=top width=251>
+      <DIV align=left>14k Plumeria earring<br><br><br>
+      <FONT color=#cc0000 size="5">Special ---- $15<BR></FONT></TD>
+</DIV></TD></TR>
+<p align="center"><img src="sj/bar2.gif" width="650" height="10"></p>
+
+
+</center>
+</html>
+
+
+ing=0 cellPadding=5 width=750 border=0>
+  <TBODY>
+  <TR>
+<TD width=100>
+      <DIV align=right><A href="sj/mjade.jpg"><IMG height=70 
+      src="sj/mjade.jpg" 
+      width=120 border=0></DIV></TD>
+<TD vAlign=top width=249>Mutlicolor Jade bracelet<BR><BR>
+      <FONT color=#cc0000 size="5">Special ---- $70<BR></FONT><TD width=110>
+      
+    
+</DIV></TD></TR>
+
+<p align="center"><img src="sj/bar2.gif" width="650" height="10"></p>
+
+
+</center>
+</html>
+
+

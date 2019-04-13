@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0048)http://home.pcmagic.net/pakeguy/calvin/rings.htm -->
+<!-- saved from url=(0047)http://home.pcmagic.net/pakeguy/calvin/ring.htm --><!-- saved from url=(0047)http://home.pcmagic.net/pakeguy/calvin/ring.htm --><!-- saved from url=(0047)http://home.pcmagic.net/pakeguy/calvin/ring.htm --><HTML><HEAD><TITLE>Rings</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2716.2200" name=GENERATOR></HEAD>
+
+<!add java>
+<head>
+<STYLE>
+.spanstyle {
+    position:absolute;
+    visibility:visible;
+    top:-50px;
+    font-size:12pt;
+    font-family:Arial;
+font-weight:bold;
+    color:blue;
+}
+</STYLE>
+
+<script>
+
+
+
+var x,y
+var step=20
+var flag=0
+
+var message="Superior Jewelry "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+    ypos[i]=-50
+}
+
+function handlerMM(e){
+    x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+    y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+    flag=1
+}
+
+function makesnake() {
+    if (flag==1 && document.all) {
+    for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]
+    }
+        xpos[0]=x+step
+        ypos[0]=y
+    
+        for (i=0; i<message.length-1; i++) {
+        var thisspan = eval("span"+(i)+".style")
+        thisspan.posLeft=xpos[i]
+            thisspan.posTop=ypos[i]
+    }
+    }
+    
+    else if (flag==1 && document.layers) {
+    for (i=message.length-1; i>=1; i--) {
+            xpos[i]=xpos[i-1]+step
+            ypos[i]=ypos[i-1]
+    }
+        xpos[0]=x+step
+        ypos[0]=y
+    
+        for (i=0; i<message.length-1; i++) {
+        var thisspan = eval("document.span"+i)
+        thisspan.left=xpos[i]
+            thisspan.top=ypos[i]
+    }
+    }
+        var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+</head>
+<body onLoad="makesnake()" style="width:100%;overflow-x:hidden;overflow-y:scroll">
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+document.write("<span id='span"+i+"' class='spanstyle'>")
+    document.write(message[i])
+document.write("</span>")
+}
+
+if (document.layers){
+    document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+<BODY background=sj/11.jpg>
+<DIV align=center>
+
+<P align=center><IMG height=100 
+      src="sj/sj.gif" width=600 
+      border=0>
+<STRONG>
+<H1><FONT face="Times New Roman, Times, serif" color=#ff0000 size=+2><EM><FONT 
+size=+3><U>Choose From 14k Yellow Gold, 14k White Gold or Sterling 
+Silver</U></FONT></EM> </FONT></H1></STRONG>
+<CENTER><!first row>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/jvn002.jpg"><IMG height=120 
+            src="sj/jvn002.jpg" width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">8mm 14k gold<BR>cut 
+            out<BR>CR8</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/291.jpg"><IMG height=120 src="sj/291.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">8mm 14k gold<BR>cut out 
+            w/name<BR>CR8</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/306.jpg"><IMG height=120 src="sj/306.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">15mm tapered<BR>14k 
+            gold<BR>TPR15</FONT> 
+       </A></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/359.jpg"></A><A href="sj/359.jpg"><IMG 
+            height=120 src="sj/359.jpg" width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle>6mm 14k gold<BR>with 2-.04ct 
+            diamond<BR><BR>6DR <br>
+           </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><!---second row--->
+
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/360.jpg"><IMG height=120 src="sj/360.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">5mm dangle initial<BR>14k 
+            gold<BR>DGH</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/356.jpg"><IMG height=120 src="sj/356.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">8mm 14k with<BR>3-.04ct 
+            diamond<BR>8DR</FONT> 
+           </FONT></A></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/368.jpg"><IMG height=120 src="sj/368.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">14k man's initial 
+            ring<BR><BR>MIR</FONT> 
+           </A></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/410.jpg"></A><A href="sj/410.jpg"><IMG 
+            height=120 src="sj/410.jpg" width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle>14k plumeria 
+ring<BR>4.5gr<BR><BR><BR>14k </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+<!third row>
+
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=0 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/396.jpg"><IMG height=120 src="sj/396.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">14k yellow gold man's 
+            <BR>ring w/2-.05ct diamond<br><BR>MDR</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>
+<!add 2>
+
+<TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/456.jpg"><IMG height=120 src="sj/456.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">14k white gold 
+            ring <BR>plumeria cut out with<BR>7-.04ct diamond<BR>WRD</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>
+
+<TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=0 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/a31.jpg"><IMG height=120 src="sj/a31.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">14k yellow gold 
+            ring<BR>plumeria cut out with<BR>7-.04ct diamond<BR>YRD</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>
+
+<!took out ring 4/18/2004>
+
+    <TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=0 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111> 
+             
+            </A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle>
+     </FONT></STRONG></TD></TR></TBODY></TABLE></TD></TR>
+</TBODY></TABLE>
+
+<!fourth row>
+<BR><TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+	<TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=2 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/1018_052.jpg"><IMG height=120 src="sj/1018_052.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">14k yellow gold<BR> bamboo ring <BR>3.9g.<BR>Q402</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>    
+
+<TD vAlign=center align=middle width="20%">
+      <TABLE cellSpacing=0 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle height=111><A 
+            href="sj/c.jpg"><IMG height=120 src="sj/c.jpg" 
+            width=120 border="0"></A></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle width="20%"><FONT 
+            face="Times New Roman, Times, serif">14k yellow gold 6mm 
+            <BR>French mount with <BR>6mm birthstone<br>BSR</FONT> 
+            </A></P></TD></TR></TBODY></TABLE></TD>
+</TBODY></TABLE>
+<!new row>
+<BR><IMG src="sj/bar2.gif"><BR><BR>
+<table border="0" cellpadding="0" cellspacing="1">
+	<tr>
+		<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2"><tr><td height="128" valign="center" align="center"><A HREF="sj/r01f.jpg"><IMG SRC="sj/r01f.jpg" border="0" width="140" height="122"></td>
+</tr><tr><td valign="center" align="center">
+front view</A><br></td></tr></table>
+
+		</td>
+<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2">
+<tr><td valign="center" align="center">
+14k yellow gold man's nugget initial ring<br>18mm x 16mm<br>19g<br>Q430<br><br></b></td></tr></table>
+
+		</td>
+
+		<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2"><tr><td height="128" valign="center" align="center"><A HREF="sj/r01s.jpg"><IMG SRC="sj/r01s.jpg" border="0" width="140" height="122"></td>
+</tr><tr><td valign="center" align="center">
+side view</A><br></td></tr></table>
+
+		<tr>
+		</td>
+		<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2"><tr><td height="128" valign="center" align="center"><A HREF="sj/r02f.jpg"><IMG SRC="sj/r02f.jpg" border="0" width="140" height="122"></td>
+</tr><tr><td valign="center" align="center">
+front view</A><br></td></tr></table>
+
+		</td>
+<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2">
+<tr><td valign="center" align="center">
+14k yellow gold man's initial ring<br>14mm x 16mm<br>11g<br>Q428<br>
+</b></td></tr></table>
+
+		</td>
+
+		<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2"><tr><td height="128" valign="center" align="center"><A HREF="sj/r02s.jpg"><IMG SRC="sj/r02s.jpg" border="0" width="140" height="122"></td>
+</tr><tr><td valign="center" align="center">
+side view</A><br></td></tr></table>
+
+		<tr>
+		</td>
+		<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2"><tr><td height="128" valign="center" align="center"><A HREF="sj/r03f.jpg"><IMG SRC="sj/r03f.jpg" border="0" width="140" height="122"></td>
+</tr><tr><td valign="center" align="center">
+front view</A><br></td></tr></table>
+
+		</td>
+<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2">
+<tr><td valign="center" align="center">
+14k yellow gold man's initial ring<br>15mm x 15mm<br>13g<br>Q429<br>
+</td></tr></table>
+
+		</td>
+
+		<td valign="center" align="center" width="33%"><table align="center" border="0" cellspacing="2"><tr><td height="128" valign="center" align="center"><A HREF="sj/r03s.jpg"><IMG SRC="sj/r03s.jpg" border="0" width="140" height="122"></td>
+</tr><tr><td valign="center" align="center">
+side view</A><br></td></tr></table>
+
+
+		</td>
+	</tr>
+</table>
+
+<IMG 
+src="sj/bar2.gif"> <BR><BR><BR><BR>   
+
+<center>
+<table border="0" cellpadding="0" cellspacing="2">
+	<tr>
+		<td valign="center" align="center" width="25%"><table align="center" border="0" cellspacing="2"><tr><td height="106" valign="center" align="center"><a href="rings/R1499.jpg">
+			<img src="rings/tn_R1499_jpg.jpg" border="0" width="105" height="100" alt="R1499.jpg"></a></td>
+</tr><tr><td valign="center" align="center"><a href="rings/R1499.jpg">
+R1499</a><br></td></tr></table>
+</td>
+		<td valign="center" align="center" width="25%"><table align="center" border="0" cellspacing="2"><tr><td height="106" valign="center" align="center"><a href="rings/R1646.jpg">
+			<img src="rings/tn_R1646_jpg.jpg" border="0" width="120" height="100" alt="R1646.jpg"></a></td>
+</tr><tr><td valign="center" align="center"><a href="rings/R1646.jpg">
+R1646</a><br></td></tr></table>
+</td>
+		<td valign="center" align="center" width="25%"><table align="center" border="0" cellspacing="2"><tr><td height="106" valign="center" align="center"><a href="rings/R1647.jpg">
+			<img src="rings/tn_R1647_jpg.jpg" border="0" width="106" height="100" alt="R1647.jpg"></a></td>
+</tr><tr><td valign="center" align="center"><a href="rings/R1647.jpg">
+R1647</a><br></td></tr></table>
+</td>
+		<td valign="center" align="center" width="25%"><table align="center" border="0" cellspacing="2"><tr><td height="106" valign="center" align="center"><a href="rings/R1684.jpg">
+			<img src="rings/tn_R1684_jpg.jpg" border="0" width="116" height="100" alt="R1684.jpg"></a></td>
+</tr><tr><td valign="center" align="center"><a href="rings/R1684.jpg">
+R1684</a><br></td></tr></table>
+</td>
+	</tr>
+</table>
+</center>
+
+
+  
+
+</HTML>
+
+
+
+
+
